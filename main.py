@@ -147,7 +147,7 @@ def save_results(_list):
     if not os.path.exists(RESULTS_DIR):
         os.mkdir(RESULTS_DIR)
 
-    result_path = '{}/{}_ows{}_s{}.tsv'.format(RESULTS_DIR, POSITION.replace(' ', '_'), int(OWS), SALARY)
+    result_path = '{}/{}_ows{}_s{}.tsv'.format(RESULTS_DIR, POSITION.replace(' ', '_'), OWS, SALARY)
     result_string = '\n'.join(['{}\t{}'.format(x[0], x[1]) for x in _list])
     with open(result_path, 'w', encoding='utf-8') as file:
         file.write(result_string)
