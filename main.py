@@ -11,7 +11,7 @@ cp.read('config.ini')
 
 POSITION = cp.get('default', 'position')
 SALARY = cp.get('default', 'salary')
-OWS = cp.get('default', 'only_with_salary').lower() not in ['0', 'false', 'no', 'not', 'n', '-']
+OWS = cp.get('default', 'only_with_salary').lower() not in ['', '0', 'false', 'no', 'not', 'n', '-']
 OWS = ['false', 'true'][OWS]
 TMP_LINK = cp.get('default', 'tmp_link')
 VAC_VOL_REG = cp.get('default', 'vacancy_volume_regex')
