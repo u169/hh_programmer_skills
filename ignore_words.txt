@@ -62,3 +62,15 @@ from
 plus
 tools
 internal
+understanding
+cloud
+your
+solutions
+support
+automation
+technology
+test
+services
+design
+systems
+development
